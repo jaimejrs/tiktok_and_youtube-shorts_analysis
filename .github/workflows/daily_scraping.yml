@@ -1,0 +1,39 @@
+name: Viral Pipeline - Hits and Trends
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  run-pipeline:
+    name: Sincronizar DW
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do Codigo
+        uses: actions/checkout@v3
+
+      - name: Configurar Python 3.13
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.13'
+          cache: 'pip'
+
+      - name: Instalar Dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 pandas sqlalchemy pymysql cryptography pytrends
+
+      - name: Passo 1 Scraper de Musica
+        env:
+          DB_CREDENTIALS: ${{ secrets.DB_CREDENTIALS }}
+        run: python scrapers/music_charts_history.py
+
+      - name: Passo 2 Google Trends
+        env:
+          DB_CREDENTIALS: ${{ secrets.DB_CREDENTIALS }}
+        run: python scrapers/trends_validator
+
+      - name: Conclusao
+        run: echo "Pipeline completo!"

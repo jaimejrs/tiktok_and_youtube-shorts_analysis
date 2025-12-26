@@ -1,0 +1,11 @@
+streamlit
+pandas
+sqlalchemy
+pymysql
+plotly
+cryptography
+scikit-learn
+scipy
+requests
+beautifulsoup4
+pytrends
