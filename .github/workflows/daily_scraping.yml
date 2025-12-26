@@ -33,7 +33,7 @@ jobs:
       - name: Passo 2 Google Trends
         env:
           DB_CREDENTIALS: ${{ secrets.DB_CREDENTIALS }}
-        run: python scrapers/trends_validator
+        run: python scrapers/trends_validator.py
 
       - name: Conclusao
         run: echo "Pipeline completo!"
