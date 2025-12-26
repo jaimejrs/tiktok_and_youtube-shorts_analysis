@@ -6,7 +6,7 @@
 
 > **Projeto desenvolvido para a disciplina de Business Intelligence da Universidade Federal do Ceará (UFC).**
 
-Este projeto é uma solução completa de **Engenharia e Análise de Dados**, que vai desde a modelagem de um Data Warehouse (DW) até a visualização avançada de dados sobre tendências de vídeos curtos (TikTok e YouTube Shorts).
+Este projeto é uma solução completa de **Análise de Dados**, que vai desde a modelagem de um Data Warehouse (DW) até a visualização avançada de dados sobre tendências de vídeos curtos (TikTok e YouTube Shorts).
 
 ### Acesse o Dashboard Online
 ➡️ **[Clique aqui para explorar o projeto ao vivo](https://tiktokandyoutubeshortsanalysis.streamlit.app/)**
@@ -45,11 +45,11 @@ Abandonamos a estrutura de "tabelão" (flat file) e construímos um **Data Wareh
 
 ### 3. Enriquecimento via Web Scraping & Automação
 Para trazer realidade aos dados simulados, implementamos scripts de **Web Scraping** (com `BeautifulSoup` e `Requests`) hospedados e versionados via **GitHub**.
-* **Desafio Musical:** A coluna original de sons estava desatualizada ou genérica. Desenvolvemos uma automação que extraiu o **Top 200 Global Hits** (Spotify/TikTok) e manipulou programaticamente a coluna de sons do dataset, inserindo músicas virais reais (ex: "Espresso", "Gata Only") para enriquecer a análise de áudio.
+* **Desafio Superado:** A coluna original de sons estava desatualizada ou genérica. Desenvolvemos uma automação que extraiu o **Top 200 Global Hits** (Spotify/TikTok) e manipulou programaticamente a coluna de sons do dataset, inserindo músicas virais reais (ex: "Espresso", "Gata Only") para enriquecer a análise de áudio.
 * **Validação de Termos:** Utilizamos scraping para validar quais termos e hashtags estavam em alta, cruzando com o `pytrends` (Google Trends).
 
-### 4. Inteligência Artificial e Visualização
-A camada final foi construída em **Streamlit**. Não apenas exibimos gráficos, mas integramos um modelo de **Machine Learning (Random Forest)** para calcular, em tempo real, quais fatores (hora de postagem, duração, uso de emojis) mais influenciam a taxa de engajamento.
+### 4. Visualização e aplicação de ML
+A camada final foi construída em **Streamlit**. Não apenas exibimos gráficos, mas integramos um modelo de **Machine Learning (Random Forest)** para calcular, quais fatores (hora de postagem, duração, uso de emojis) mais influenciam a taxa de engajamento.
 
 ---
 
