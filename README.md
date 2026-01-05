@@ -74,7 +74,7 @@ O projeto é dividido em 6 abas estratégicas:
 | :--- | :--- |
 | **🏠 Visão Geral** | KPIs macro (Total de Views, Likes), comparativo de volume entre plataformas e análise de distribuição de dados (Boxplots e Curvas de Tendência). |
 | **⚙️ Fatores (IA)** | **Destaque do projeto.** Um modelo de ML roda em background para dizer *o que* causa o sucesso. Inclui análise de melhor horário e nicho. |
-| **📝 Conteúdo** | Processamento de Linguagem Natural (NLP) para extrair palavras-chave dos títulos e o **Music Lab**, que analisa o impacto de usar Hits Virais vs. Músicas Comuns. |
+| **📝 Conteúdo** | Faz uma análise dos termos e trás o **Music Lab**, que analisa o impacto de usar Hits Virais vs. Músicas Comuns por meio de Web Scraping. |
 | **🌍 Geográfico** | Mapa de calor interativo global mostrando a intensidade de consumo de vídeos por país e região. |
 | **🔝 Top Virais** | Uma "Galeria da Fama" estilizada com os vídeos de maior performance e listagem detalhada dos dados. |
 | **📈 Trends** | Integração com dados externos para validar se os termos do dataset correspondem às buscas reais no Google Trends. |
