@@ -7,7 +7,13 @@ import os
 
 
 # 1. CONFIGURAÇÕES
-
+#Essas credenciais não devem ser expostas em projetos reais - A melhor forma seria o uso do secrets - Essas credenciais são usadas somente para esse projeto.
+DB_USER = 'root'
+DB_PASS = '5682'
+DB_HOST = 'localhost'
+DB_PORT = '3306'
+DB_NAME = 'tiktok_analytics'
+CSV_NAME = "youtube_shorts_tiktok_trends_2025.csv"
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(base_dir, CSV_NAME)
